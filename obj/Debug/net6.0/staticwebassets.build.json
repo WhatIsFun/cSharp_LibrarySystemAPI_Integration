@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JASNT9IfCLpNP3jolvwXjbb9k2C9P3F0a1qmCUDRzLI=",
+  "Source": "cSharp_LibrarySystemAPI_Integration",
+  "BasePath": "_content/cSharp_LibrarySystemAPI_Integration",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

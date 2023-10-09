@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cSharp_LibrarySystemAPI_Integration.props" />
+</Project>
