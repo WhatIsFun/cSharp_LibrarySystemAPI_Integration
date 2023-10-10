@@ -19,6 +19,7 @@ namespace cSharp_LibrarySystemAPI_Integration.Model
         [Required]
         [JsonIgnore]
         public bool IsAvailable { get; set; }
+        public decimal Price { get; set; }
         [JsonIgnore]
         public List<BorrowingTransaction> BorrowingTransactions { get; set; }
     }
