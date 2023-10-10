@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace cSharp_LibrarySystemAPI_Integration
+namespace cSharp_LibrarySystemAPI_Integration.Model
 {
     public class BorrowingTransaction
     {

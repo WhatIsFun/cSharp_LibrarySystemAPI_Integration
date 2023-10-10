@@ -1,13 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using JsonIgnoreAttribute = System.Text.Json.Serialization.JsonIgnoreAttribute;
 
-namespace cSharp_LibrarySystemAPI_Integration
+namespace cSharp_LibrarySystemAPI_Integration.Model
 {
     public class Book
     {
+        [JsonIgnore]
         [Key]
-        [Newtonsoft.Json.JsonIgnore]
         public int BookId { get; set; }
         [Required]
         public string Title { get; set; }
@@ -16,9 +17,9 @@ namespace cSharp_LibrarySystemAPI_Integration
         [Required]
         public int PublicationYear { get; set; }
         [Required]
-        [Newtonsoft.Json.JsonIgnore]
+        [JsonIgnore]
         public bool IsAvailable { get; set; }
-        [Newtonsoft.Json.JsonIgnore]
+        [JsonIgnore]
         public List<BorrowingTransaction> BorrowingTransactions { get; set; }
     }
 }

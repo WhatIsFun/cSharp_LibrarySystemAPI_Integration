@@ -1,3 +1,4 @@
+using Serilog;
 namespace cSharp_LibrarySystemAPI_Integration
 {
     public class Program
@@ -12,6 +13,8 @@ namespace cSharp_LibrarySystemAPI_Integration
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            //Logging configs from Appsettings.json
+            
 
             var app = builder.Build();
 
@@ -23,7 +26,7 @@ namespace cSharp_LibrarySystemAPI_Integration
             }
 
             app.UseHttpsRedirection();
-
+      
             app.UseAuthorization();
 
 
